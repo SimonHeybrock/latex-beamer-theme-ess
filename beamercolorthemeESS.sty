@@ -1,0 +1,53 @@
+% Copyright 2007 by Till Tantau
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\ProvidesPackageRCS $Header: /Users/joseph/Documents/LaTeX/beamer/base/themes/color/beamercolorthemewhale.sty,v d02a7cf4d8ae 2010/06/17 09:11:41 rivanvx $
+
+
+\mode<presentation>
+
+\definecolor{essblue}{rgb}{0,.5843,.8039}
+
+\setbeamercolor{structure}{fg=black}
+
+\setbeamercolor*{title page header}{fg=white}
+\setbeamercolor*{subtitle}{fg=white}
+\setbeamercolor*{author}{fg=white}
+\setbeamercolor*{date}{fg=white}
+
+
+\setbeamercolor*{palette primary}{use=structure,fg=white,bg=essblue}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=essblue!75!black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=essblue!50!black}
+\setbeamercolor*{palette quaternary}{fg=white,bg=essblue!60!black}
+
+\setbeamercolor*{item}{fg=essblue!60!black}
+
+\setbeamercolor*{sidebar}{use=structure,bg=essblue}
+  
+\setbeamercolor*{palette sidebar primary}{use=structure,fg=essblue!10}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{use=structure,fg=essblue!50}
+\setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+\setbeamercolor*{titlelike}{parent=palette primary}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=essblue}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!20!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!20!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!20!bg}
+
+\mode
+<all>
